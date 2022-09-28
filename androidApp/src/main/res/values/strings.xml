@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="minimum_temp">Minimum temp</string>
+    <string name="point">...</string>
+    <string name="maximum_temp">Maximum temp</string>
+    <string name="o">o</string>
+    <string name="character">!</string>
+    <string name="course">Course</string>
+    <string name="news">News</string>
+    <string name="weather">Weather</string>
+    <string name="author">Author: </string>
+    <string name="title">Title: </string>
+    <string name="description">Description:</string>
+    <string name="currency_converter">Currency Converter</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="amount">Amount</string>
+    <string name="convert">Convert</string>
+
+    <string-array name="currency_codes">
+    <item></item>
+    <item>UZS</item>
+    <item>CAD</item>
+    <item>EUR</item>
+    <item>HKD</item>
+    <item>ISK</item>
+    <item>PHP</item>
+    <item>DKK</item>
+    <item>HUF</item>
+    <item>CZK</item>
+    <item>AUD</item>
+    <item>RON</item>
+    <item>SEK</item>
+    <item>IDR</item>
+    <item>INR</item>
+    <item>BRL</item>
+    <item>RUB</item>
+    <item>HRK</item>
+    <item>JPY</item>
+    <item>THB</item>
+    <item>CHF</item>
+    <item>SGD</item>
+    <item>PLN</item>
+    <item>BGN</item>
+    <item>CNY</item>
+    <item>NOK</item>
+    <item>NZD</item>
+    <item>ZAR</item>
+    <item>USD</item>
+    <item>MXN</item>
+    <item>ILS</item>
+    <item>GBP</item>
+    <item>KRW</item>
+    <item>MYR</item>
+    </string-array>
+</resources>

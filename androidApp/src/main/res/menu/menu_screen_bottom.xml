@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuWeather"
+        android:icon="@drawable/ic_cloud"
+        android:title="@string/weather" />
+    <item
+        android:id="@+id/menuNews"
+        android:icon="@drawable/ic_newspaper"
+        android:title="@string/news" />
+    <item
+        android:id="@+id/menuMoney"
+        android:icon="@drawable/ic_money"
+        android:title="@string/course" />
+</menu>

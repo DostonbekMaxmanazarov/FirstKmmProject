@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="#fff"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/item_spinner">
+
+        </androidx.appcompat.widget.AppCompatSpinner>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.8">
+
+        </androidx.constraintlayout.widget.Guideline>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guide">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/character"
+            android:textColor="#fff"
+            android:textSize="56sp"
+            android:typeface="serif"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spinner">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/gradus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/o"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:typeface="serif"
+            app:layout_constraintLeft_toRightOf="@id/temp"
+            app:layout_constraintTop_toTopOf="@id/temp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/mainText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/point"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:typeface="serif"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/temp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/maxText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/maximum_temp"
+            android:textColor="#3E3E3E"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/frame"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv">
+
+        </TextView>
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:background="#454545"
+            app:layout_constraintBottom_toBottomOf="@id/iv"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv" />
+
+        <TextView
+            android:id="@+id/minText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/minimum_temp"
+            android:textColor="#3E3E3E"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frame">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/maxTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/point"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:typeface="serif"
+            app:layout_constraintBottom_toBottomOf="@id/maxText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/maxText">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/minTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/point"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:typeface="serif"
+            app:layout_constraintBottom_toBottomOf="@id/minText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/minText">
+
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

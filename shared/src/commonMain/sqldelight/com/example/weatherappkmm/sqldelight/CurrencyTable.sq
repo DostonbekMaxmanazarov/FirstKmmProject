@@ -1,0 +1,18 @@
+
+CREATE TABLE CurrencyTable (
+id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+result_value TEXT NOT NULL
+);
+
+selectAll:
+SELECT * FROM CurrencyTable;
+
+insertCurrency:
+INSERT INTO CurrencyTable(result_value)
+VALUES (?);
+
+deleteById:
+DELETE FROM CurrencyTable WHERE id = ?;
+
+updateComplete:
+UPDATE CurrencyTable SET result_value = ? WHERE id = ?;
